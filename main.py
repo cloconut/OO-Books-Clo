@@ -10,20 +10,31 @@ class Book():
         self.year = year
         self.numpages = numpages
 
-    def displaydetails
+    def displaydetails(self):
+        print(f'Title:{title}')
+        print(f'Author:{author}')
+        print(f'Year of Publication:{year}')
+        print(f'Number of Pages:{numpages}')
 
-    def ratebook
 
-    def reviewbook
+    def ratebook(self):
+
+    def reviewbook(self):
+
+    book1 = Book('American Psycho', ''):
 
 class Novel(Book):
-    def __init__(self, genre, numchapters):
+    def __init__(self, title, author, year, numpages, genre, numchapters):
+            super().__init__(title, author, year, numpages)
+            self.genre = genre
+            self.numchapters = numchapters
 
-    def calcreadtime
+    def calcreadtime(self):
 
 class Magazine(Book):
-    def __init__(self, issuenum, numarticles)
+    def __init__(self, title, author, year, numpages, issuenum, numarticles)
+        super().__init__(title, author, year, numpages)
         self.issurenum = issuenum
         self.numarticles = numarticles
 
-    def getarticlebytitle
+    def getarticlebytitle(self):
